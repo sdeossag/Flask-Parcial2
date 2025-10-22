@@ -10,3 +10,34 @@ El servicio de historial tendría su propia conexión a una base de datos (por e
 * Cada microservicio puede evolucionar de forma independiente.
 * Facilita el despliegue distribuido (por ejemplo, en Docker o Kubernetes).
 * Permite escalar el servicio de historial sin afectar el rendimiento del servicio principal.
+
+
+# Instrucciones para ejecutar el microservicio Flask
+
+## 1. Clonar el repositorio
+Clona el repositorio en tu máquina local usando:
+
+## 2. Crea un entorno virtual
+Crea un entorno virtual de Python (para aislar las dependencias del proyecto):
+python -m venv .venv
+
+## 3. Instalar dependencias
+Instala Flask y las demás dependencias desde el archivo requirements.txt:
+pip install -r requirements.txt
+
+## 4. Ejecutar la aplicación
+Ejecuta el microservicio con:
+python app.py
+Esto iniciará el servidor en la dirección:
+http://127.0.0.1:5000
+
+## 5. Probar el microservicio
+
+Abre tu navegador o usa una herramienta como Postman e ingresa la URL:
+http://127.0.0.1:5000/numero/<num>
+Por ejemplo:
+http://127.0.0.1:5000/numero/6
+y ahi podras ver como funciona este servicio :)
+
+
+##
